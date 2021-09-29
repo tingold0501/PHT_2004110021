@@ -1,0 +1,32 @@
+BaiTap/.vscode/settings.json
+BaiTap/bin/App.class
+BaiTap/bin/com/tinph2004110021/tuan03/Account.class
+BaiTap/bin/com/tinph2004110021/tuan03/AccountTestDrive.class
+BaiTap/bin/com/tinph2004110021/tuan03/Book.class
+BaiTap/bin/com/tinph2004110021/tuan03/BookTestDrive.class
+BaiTap/bin/com/tinph2004110021/tuan03/Car.class
+BaiTap/bin/com/tinph2004110021/tuan03/CarTestDrive.class
+BaiTap/bin/com/tinph2004110021/tuan03/Computer.class
+BaiTap/bin/com/tinph2004110021/tuan03/ComputerTestDrive.class
+BaiTap/bin/com/tinph2004110021/tuan03/Staff.class
+BaiTap/bin/com/tinph2004110021/tuan03/StaffTestDrive.class
+BaiTap/README.md
+
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
