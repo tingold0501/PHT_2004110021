@@ -1,8 +1,15 @@
 package com.tinph2004110021.tuan04;
 
+import java.util.Scanner;
+
 public class Computer {
+    static Scanner sc = new Scanner(System.in);
     String nhaSx, heDieuHanh, namSx, namBh,ram, cpu;
     double gia;
+    Computer()
+    {
+
+    }
     Computer(String nSx)
     {
         nhaSx = nSx;
@@ -51,5 +58,26 @@ public class Computer {
         ram = r2;
         cpu = Cpu1;
         gia = g;
+    }
+    public void nhapLieu()
+    {
+        System.out.println("Nhập Nhà Sản Xuất:");
+        nhaSx = sc.nextLine();
+        System.out.println("Nhập Hệ Điều Hành:");
+        heDieuHanh = sc.nextLine();
+        System.out.println("Nhập Năm Sản Xuất:");
+        namSx = sc.nextLine();
+        System.out.println("Nhập Năm Bảo Hành:");
+        namBh = sc.nextLine();
+        System.out.println("Nhập Ram:");
+        ram = sc.nextLine();
+        System.out.println("Nhập CPU:");
+        cpu = sc.nextLine();
+        System.out.println("Nhập Giá:");
+        gia = sc.nextDouble();
+    }
+    public void xuatThongTin()
+    {
+        System.out.printf("%-20S %-20S %-20S %-20S %-20S %-20S %-20.2f\n", nhaSx, heDieuHanh, namSx, namBh, ram, cpu, gia);
     }
 }
