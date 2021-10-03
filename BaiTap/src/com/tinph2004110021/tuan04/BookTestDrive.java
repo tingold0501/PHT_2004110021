@@ -63,13 +63,15 @@ public class BookTestDrive {
     }
     public static void xoaSach()
     {
-        System.out.println("Nhập Loại Sách Muốn Xoá:");
-        String name = sc.nextLine();
+        //sc.nextLine();
+        System.out.println("Nhập Giá Sách Muốn Xoá:");
+        double g = sc.nextDouble();
         for (Book book : books) {
-            if(book.loai == name)
+            if(book.gia == g)
             {
                 books.remove(book);
             }
+            break;
         }
     }
     public static void inThongTin()

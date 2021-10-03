@@ -62,10 +62,10 @@ public class CarTestDrive {
     }
     public static void xoaThongTin()
     {
-        System.out.println("Nhập Tên Chủ Xe Muốn Xoá:");
-        String name = sc.nextLine();
+        System.out.println("Nhập Dung Tích Xăng Muốn Xoá:");
+        double dtx = sc.nextDouble();
         for (Car car : cars) {
-            if(car.tenChuXe == name)
+            if(car.dungTichXang == dtx)
             cars.remove(car);
         }
     }
@@ -79,10 +79,10 @@ public class CarTestDrive {
     public static void suaThongTin()
     {
         sc.nextLine();
-        System.out.println("Nhập Tên Chủ Xe Muốn Sửa:");
-        String name = sc.nextLine();
+        System.out.println("Nhập Dung Tích Xăng Muốn Sửa:");
+        double dtx = sc.nextDouble();
         for (Car car : cars) {
-            if(car.tenChuXe == name)
+            if(car.dungTichXang == dtx)
             {
                 car.nhapThongTin();
             }

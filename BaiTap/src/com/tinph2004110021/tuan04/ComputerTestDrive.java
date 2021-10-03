@@ -80,10 +80,10 @@ public class ComputerTestDrive {
     }
     public static void suaThongTin()
     {
-        System.out.println("Nhập Tên Nhà Sản Xuất Cần Sửa:");
-        String name = sc.nextLine();
+        System.out.println("Nhập Giá Cần Sửa:");
+        double g = sc.nextDouble();
         for (Computer computer : computers) {
-            if(computer.nhaSx == name)
+            if(computer.gia == g)
             {
                 computer.nhapLieu();
             }
