@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class lad03 {
     String tenSp;
-    double donGia, giamGia, thueThuNhap;
+    double donGia, giamGia, thueThuNhap, trungBinh;
     static Scanner sc = new Scanner(System.in);
     public lad03()
     {
@@ -21,9 +21,14 @@ public class lad03 {
         giamGia = sc.nextDouble();
         System.out.println("Nhập Thuê Thu Nhập:");
         thueThuNhap = sc.nextDouble();
+        trungBinh = (donGia + giamGia + thueThuNhap)/3;
     }
     public void xuatDuLieu()
     {
         System.out.printf("%-20S %-20.2f %-20.2f %-20.2f\n", tenSp, donGia, giamGia, thueThuNhap );
+    }
+    public void xuatDuLieuTb()
+    {
+        System.out.printf("%-20S %-20.2f %-20.2f %-20.2f %-20f\n", tenSp, donGia, giamGia, thueThuNhap,trungBinh );
     }
 }

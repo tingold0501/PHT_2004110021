@@ -88,14 +88,21 @@ public class lad03TestDrive {
         Collections.sort(l3s, new Comparator<lad03>(){
             @Override
             public int compare(lad03 o1, lad03 o2) {
-                if(o1.thueThuNhap < o2.thueThuNhap)
-                {
-                    return -1;
+                for (lad03 lad03 : l3s) {
+                   lad03.xuatDuLieuTb();
                 }
-                return 1;
+                return 0;
             } 
         });
-        xuatThongTin();
+        xuatTb();
+        
+    }
+    public static void xuatTb()
+    {
+        System.out.printf("%-20S %-20S %-20S %-20S %-20S\n","Tên Sản Phẩm", "Đơn Giá","Giảm Giá","Thuế","Trung Bình");
+        for (lad03 lad03 : l3s) {
+            lad03.xuatDuLieuTb();
+        }
     }
     public static void xuatThongTin()
     {
