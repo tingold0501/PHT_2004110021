@@ -1,7 +1,6 @@
 package com.tinph2004110021.tuan05;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -69,11 +68,12 @@ public class SinhVienTestDrive {
     {
         System.out.println("Nhập Điểm Cần Tìm:");
         double diem = sc.nextDouble();
+        System.out.printf("%-20S %-20S\n","họ tên","điểm trung bình");
         for (SinhVien sinhVien : svs) {
             if(diem == sinhVien.diemTb)
             {
-                xuatDuLieu();
-                break;
+                sinhVien.xuatDuLieu();
+                svs.toArray();
             }
             else
             System.out.println("Nhập Liệu Không Hợp Lệ");
@@ -84,10 +84,10 @@ public class SinhVienTestDrive {
         System.out.println("Nhập Họ Tên Cần Tìm:");
         sc.nextLine();
         String name = sc.nextLine();
+        System.out.printf("%-20S %-20S\n","Họ tên","điểm trung bình");
         for (SinhVien sinhVien : svs) {
             if(name.equals(sinhVien.hoTenSv))
             {
-                System.out.printf("%-20S %-20S\n","Họ tên","điểm trung bình");
                 sinhVien.xuatDuLieu();
                 svs.toArray(); 
             }
