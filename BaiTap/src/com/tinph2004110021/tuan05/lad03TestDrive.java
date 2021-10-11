@@ -95,7 +95,6 @@ public class lad03TestDrive {
             } 
         });
         xuatTb();
-        
     }
     public static void xuatTb()
     {

@@ -21,8 +21,6 @@ public class lab01 {
         }
         for (Double dbs : db) {
             System.out.println(dbs);
-            
         }
     }
-    
 }
