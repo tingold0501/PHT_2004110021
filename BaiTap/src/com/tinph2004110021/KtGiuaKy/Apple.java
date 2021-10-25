@@ -43,7 +43,6 @@ public class Apple {
            {
                System.out.println("Number Error!!!");
            }
-           
        }
    }
    public void input()
@@ -58,14 +57,14 @@ public class Apple {
    }
    public void displayApple()
    {
-        System.out.printf("%-20S %-20S %-20S\n","id applle", "weight apple", "color apple");
+        System.out.printf("%-20d %-20.2f %-20S\n",ID, weight,color);
    }
    public void display()
    {
         System.out.println("==========Apple========");
+        System.out.printf("%-20S %-20S %-20S\n","id applle", "weight apple", "color apple"); 
        for (Apple apple : lApple) {
             apple.displayApple();
-            System.out.printf("%-20d %-20.2f %-20S\n",ID, weight,color);
        }
    }
    public void addApple()
