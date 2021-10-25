@@ -12,7 +12,7 @@ public class SinhVien {
     }
     public void nhapLieu()
     {
-        System.out.println("Nhập Họ Tên Sinh Viên:");
+        System.out.println("Input ID Apple:");
         hoTenSv = sc.nextLine();
         System.out.println("Nhập Điểm Trung Bình Sinh Viên:");
         diemTb = sc.nextDouble();
