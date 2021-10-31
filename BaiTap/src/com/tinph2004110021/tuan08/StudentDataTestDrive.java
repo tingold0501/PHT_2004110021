@@ -16,7 +16,7 @@ public class StudentDataTestDrive {
         studentDatas.pop();
         System.out.println(studentDatas);
         Scanner input=new Scanner(System.in);
-        System.out.print("Enter record no to display: ");
+        System.out.print("Enter record no to display : ");
         String rec = input.next();
         for(StudentData data:list){
             if(data.getid().equals(rec)){
