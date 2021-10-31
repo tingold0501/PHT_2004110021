@@ -2,7 +2,7 @@ package com.tinph2004110021.tuan08;
 
 public class TreeDemo 
 {
-    protected NodeDemo root;
+    NodeDemo root;
     
     public void insert(NodeDemo node, int value)
     {
