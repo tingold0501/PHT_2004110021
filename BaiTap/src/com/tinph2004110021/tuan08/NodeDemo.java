@@ -4,7 +4,10 @@ public class NodeDemo {
     int value;
     NodeDemo left;
     NodeDemo right;
-
+    NodeDemo()
+    {
+        
+    }
     NodeDemo(int value){
         this.value = value;
         right = null;
