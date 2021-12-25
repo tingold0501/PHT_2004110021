@@ -21,7 +21,6 @@ public class LinkedListApple {
         { 
             nApple.next = this.head;
             this.head = nApple;
-            
             if(this.head == null)
             {
                 this.tail = nApple;
